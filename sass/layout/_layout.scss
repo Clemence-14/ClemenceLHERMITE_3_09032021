@@ -1,0 +1,23 @@
+html {
+    font-size: 16px;
+
+    body {
+        font-family: $font-family-primary;
+
+        @import "header";
+
+        main {
+            section {
+                h2 {
+                    font-family: $font-family-secondary;
+                }
+            }
+        }
+
+        footer {
+            background-color: grey;
+        }
+    }
+
+
+}
