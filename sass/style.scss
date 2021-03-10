@@ -1,7 +1,30 @@
 @import "helpers/variables";
 @import "layout/layout";
 
+@media (max-width: 767px) {
 
-h3 {
-    color: blue;
+header img {
+    height: 100px;
+    width: 100px;
 }
+
+header .logoheader img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header .logoheader {
+    display: flex;
+    align-items: center;
+}
+
+.imagealafrancaise img {
+    display: block;
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+}
+
+}
+
