@@ -3,12 +3,20 @@
 
 @media (max-width: 767px) {
 
+header .logoheader img {
+    width: 40%;
+}
+
 /* Localisation page d'accueil*/
 .localisation {
     display: flex;
     align-items: center;
     justify-content: space-around;
     background-color: lightgrey;
+}
+
+.accueiltexte .bouton1 {
+    background-color: pink;
 }
 
 /* Titre h1 et texte page accueil*/
@@ -42,8 +50,91 @@
 .fonctionnement {
     display: flex;
     justify-content: center;
+    align-items: center;
     background-color: #f2f2f2;
+    border-radius: 1rem;
+    padding-top: 1rem;
+    margin-bottom: 1rem;
 }
+
+/* 4 vignettes de restaurants page accueil*/
+.vignette img {
+    display: block;
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+}
+
+/* Vignette note pour la note enchantée car il faut la dimensionner autrement*/
+.vignette-note img {
+    display: block;
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+/* Alignement du texte et icône coeur*/
+.vignette .vignette-texte {
+    padding-left: 1rem;
+    display: flex;
+    align-items: center;
+    
+}
+
+/* Alignement texte décalage gauche et icône coeur pour la note enchantée*/
+.vignette-note .vignette-texte {
+    padding-left: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+/* Décalage titre gauche*/
+h4 {
+    padding-left: 1rem;
+}
+
+/* Tous les enfants de la section restaurants page accueil*/
+.restaurants > div {
+    background-color: #f2f2f2;
+    padding-top: 2rem;
+    margin-top: 4rem;
+}
+
+/* Arrondissement des angles*/
+.vignette img {
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.vignette-note img {
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+/* Image texte et icône catégorie restaurants page accueil*/
+.restaurants .vignettes .vignette {
+    margin-bottom: 1rem;
+    background-color: white;
+    border-radius: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.restaurants .vignettes .vignette-note {
+    background-color: white;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+/* Icône coeur positionnement et taille page accueil*/
+.heart {
+    position: absolute;
+    right: 50px;
+    font-size: x-large;
+}
+
 
 
 
