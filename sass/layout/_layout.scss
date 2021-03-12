@@ -1,25 +1,14 @@
 html {
     font-size: 16px;
 
-    body {
-        font-family: $font-family-primary;
+        @import "body";
 
         @import "header";
 
 
-        main {
-            section {
-                h2 {
-                    font-family: $font-family-secondary;
-                }
-            }
-        }
+        @import "main";
 
-        footer {
-            background-color: rgb(19, 18, 18);
-            color: white;
-        }
+        @import "footer";
     }
 
 
-}
