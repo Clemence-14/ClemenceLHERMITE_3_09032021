@@ -15,13 +15,9 @@ header .logoheader img {
     justify-content: center;
 }
 
-.restaurants .vignettes .vignette-texte {
-    line-height: normal;
-}
-
-/* Titre h1 et texte page accueil*/
-.search .accueiltexte .bouton1 {
-   background-color: #f2f2f2;
+/* Centrage h1 et texte page accueil*/
+.search .accueiltexte {
+    text-align: center;
 }
 
 /* Bouton explorer nos restaurants page accueil*/
@@ -60,6 +56,10 @@ header .logoheader img {
     
 }
 
+/* Taille des icônes dans fonctionnement*/
+.search .fonctionnement .fas {
+    font-size: large;
+}
 
 /* 4 vignettes de restaurants page accueil*/
 .vignette img {
