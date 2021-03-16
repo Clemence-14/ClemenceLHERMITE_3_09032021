@@ -260,7 +260,11 @@ h2 {
 /* Supprimer le point devant par défaut des li*/
 footer nav ul li {
     list-style: none;
-    padding-bottom: 0.5em;
+    padding-bottom: 0.5rem;
+}
+
+footer ul {
+    margin-top: 0;
 }
 
 /* Supprimer le soulignement par défaut des liens et changer leur couleur*/
@@ -269,9 +273,13 @@ footer nav a {
     color: white;
 }
 
+/* Changement de couleur du logo en blanc redimensionnement et alignement*/
 footer img {
-    background-color: white;
-    margin-left: 2rem;
+    filter: invert(1);
+    margin-left: 2.5rem;
+    margin-bottom: 0;
+    height: 100px;
+    width: 100px;
 }
 
 }
