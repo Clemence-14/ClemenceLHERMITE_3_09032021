@@ -2,4 +2,44 @@ header {
     h1 {
         font-family: $font-family-secondary;
     }
+
+    header .logoheader img {
+        width: 40%;
+    }
+
+    /* Localisation page d'accueil*/
+    .localisation {
+        background-color: rgb(238, 232, 232);
+        box-shadow: 1px 1px 8px grey inset;
+        display: flex;
+        justify-content: center;
+    }
+
+    /* logo*/
+    header img {
+        height: 100px;
+        width: 100px;
+    }
+
+    /* logo*/
+    header .logoheader img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* Icône et logo pages menu*/
+    header .logoheader {
+        display: flex;
+        align-items: center;
+    }
+
+    /* Image en haut du menu*/
+    .imagealafrancaise img {
+        display: block;
+        width: 100%;
+        height: 80%;
+        object-fit: cover;
+    }
+
 }

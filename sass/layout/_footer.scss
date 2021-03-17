@@ -2,3 +2,28 @@ footer {
     background-color: rgb(19, 18, 18);
     color: white;
 }
+
+/* Supprimer le point devant par défaut des li*/
+footer nav ul li {
+    list-style: none;
+    padding-bottom: 0.5rem;
+}
+
+footer ul {
+    margin-top: 0;
+}
+
+/* Supprimer le soulignement par défaut des liens et changer leur couleur*/
+footer nav a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Changement de couleur du logo en blanc redimensionnement et alignement*/
+footer img {
+    filter: invert(1);
+    margin-left: 2.5rem;
+    height: 100px;
+    width: 100px;
+   
+}
