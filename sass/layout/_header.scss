@@ -7,6 +7,22 @@ header {
         width: 40%;
     }
 
+    /* Image logo ohmyfood*/
+    .logoheader img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 1rem;
+        margin-top: 2rem;
+    }
+
+    .logoheader {
+        display: flex;
+        align-items: center;
+    }
+
+
+
     /* Localisation page d'accueil*/
     .localisation {
         background-color: rgb(238, 232, 232);
@@ -15,24 +31,6 @@ header {
         justify-content: center;
     }
 
-    /* logo*/
-    header img {
-        height: 100px;
-        width: 100px;
-    }
-
-    /* logo*/
-    header .logoheader img {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    /* Icône et logo pages menu*/
-    header .logoheader {
-        display: flex;
-        align-items: center;
-    }
 
     /* Image en haut du menu*/
     .imagealafrancaise img {
