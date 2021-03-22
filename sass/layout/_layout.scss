@@ -39,10 +39,45 @@
     }
 }
 
+
+
+/* Apparition progressive des pages de menu*/
+.filter {
+    animation: fadein 2s;
+    -moz-animation: fadein 2s; /* Firefox*/
+    -webkit-animation: fadein 2s; /* Safari et Chrome*/
+    transition-delay: 2s;
+}
+
+@keyframes fadein { /* Sur Firefox*/
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadein { /* Sur Safari et Chrome*/
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
 .search{
 /* Centrage h1 et texte page accueil*/
  .accueiltexte {
     text-align: center;
+    background-color: #f2f2f2;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}
+
+.bouton1 {
+    background-color: #f2f2f2;
 }
 
 /* Bouton explorer nos restaurants page accueil*/
@@ -142,9 +177,17 @@
     align-items: center;
 }
 
-/* Décalage titre gauche*/
+/* Décalage titre gauche et marges haut bas*/
 h4 {
     padding-left: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 0;
+}
+
+/* Marge haut bas pour les paragraphes dans chaque vignette page accueil*/
+p {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
 }
 
 /* Tous les enfants de la section restaurants page accueil*/
@@ -227,6 +270,12 @@ h4 {
     margin-bottom: 1rem;
 }
 
+/* Supprimer le soulignement par défaut des liens et les colorer en noir*/
+    .filter a {
+        text-decoration: none;
+        color: black;
+    }
+
 /* Mettre prix et check côte à côte*/
     .filter .prix {
     display: flex;
@@ -256,15 +305,17 @@ h4 {
   
 
 /* Icone à droite de chaque menu sur fond vert*/
-    .filter .prix .check {
-    padding: 1rem;
-    height: 80px;
-    display: flex;
-    align-items: center;
-    background-color: #99E2D0;
-    border-top-right-radius: 1em;
-    border-bottom-right-radius: 1em;
-}
+    .filter {
+        .prix .check {
+            padding: 1rem;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            background-color: #99E2D0;
+            border-top-right-radius: 1em;
+            border-bottom-right-radius: 1em;
+        }
+    }
 
 /* Mettre les prix en bas du conteneur*/
 .prix {
