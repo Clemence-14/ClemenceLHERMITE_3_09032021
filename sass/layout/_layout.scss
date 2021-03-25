@@ -1,31 +1,53 @@
+.chargement {
+    /* Création du loader*/
 
+    border-top: 10px solid #9356DC;
+    border-bottom: 10px solid #f789d7;
+    border-left: 10px solid #fdc4ff;
+    border-right: 10px solid #AD86DC;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    -webkit-animation: spin 1.5s linear infinite;
+    -o-animation: spin 1.5s linear infinite;
+    animation: spin 1.5s linear infinite; 
 
+    /* Placement du loader au milieu de la page*/
 
-/* Apparition progressive des pages de menu*/
-.menu-title {
-    animation: fadein 2s;
-    -moz-animation: fadein 2s; /* Firefox*/
-    -webkit-animation: fadein 2s; /* Safari et Chrome*/
-    transition-delay: 2s;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }
 
-@keyframes fadein { /* Sur Firefox*/
-    from {
-        opacity: 0;
+/* Animation du loader*/
+
+
+@keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
     }
-    to {
-        opacity: 1;
+    100% {
+        -webkit-transform: rotate(360deg);
     }
 }
 
-@-webkit-keyframes fadein { /* Sur Safari et Chrome*/
-    from {
-        opacity: 0;
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
     }
-    to {
-        opacity: 1;
+    100% {
+        transform: rotate(360deg);
     }
 }
+
+
+
+
+
+
 
 .search{
 /* Centrage h1 et texte page accueil*/
@@ -147,7 +169,7 @@ h4 {
 /* Marge haut bas pour les paragraphes dans chaque vignette page accueil*/
 p {
     margin-bottom: 1rem;
-    margin-top: 1rem;
+    margin-top: 0.5rem;
 }
 
 /* Tous les enfants de la section restaurants page accueil*/
@@ -174,13 +196,17 @@ p {
     margin-right: 1rem;
 }
 
+.vignettes h2 {
+    margin-left: 1rem;
+}
+
 
 /* Icône coeur positionnement et taille page accueil*/
 .heart {
     position: absolute;
     right: 50px;
     font-size: 2rem;
-    color: #9356DC;
+    color: gray;
 }
 
 /* Icône coeur plein*/
@@ -190,7 +216,13 @@ p {
     right: 0;
     font-size: 2rem;
     color: #9356DC;
-    display: none;
+    opacity: 0;
+}
+
+/* Activation au clic et durée de transition*/
+.heart .fas:active {
+    opacity: 1;
+    transition-duration: .3s;
 }
 }
 
@@ -214,10 +246,31 @@ p {
     margin-left: 20px;
 }
 
-/* icône coeur*/
+/* icône coeur avec titre h1*/
 .like i {
-    font-size: 20px;
+    position: absolute;
+    right: 50px;
+    color: gray;
+    font-size: 2rem;
 }
+
+/* Icône coeur plein avec titre h1*/
+.like .fas {
+    position: absolute;
+    right: 50px;
+    font-size: 2rem;
+    color: #9356DC;
+    opacity: 0;
+}
+
+/* Activation couleur de coeur au clic à côté titre h1*/ 
+.like .fas:active {
+    opacity: 1;
+    transition-duration: .5s;
+}
+
+
+
 
 /* Intitulé menu descriptif et prix*/
 .plats {
@@ -259,20 +312,24 @@ p {
 
 /* Titre h3 dans chaque menu*/
 .plat h3 {
-    padding-top: 1em;
+    padding-top: 1rem;
+    margin-bottom: 0;
 }
 
-
+.plat p {
+    margin-top: 0.5rem;
+}
   
 
 /* Icone à droite de chaque menu sur fond vert*/
     .plat {
         .prix .check {
             padding: 1rem;
-            height: 80px;
+            height: 70px;
             display: flex;
             align-items: center;
             background-color: #99E2D0;
+            color: white;
             border-top-right-radius: 1em;
             border-bottom-right-radius: 1em;
         }
@@ -285,7 +342,7 @@ p {
 }
 
 /* Titre entrée plat dessert*/
-    .menu-title {
+.menu-title {
     margin-left: 1em;
     font-weight: normal;
     color: grey;
