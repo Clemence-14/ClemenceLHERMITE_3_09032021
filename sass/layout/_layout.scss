@@ -52,7 +52,6 @@
 
 
 
-
 /* Animation pour les divs*/
 
 .plats {
@@ -81,8 +80,9 @@
 
 body {
     margin: 0;
+    
+    
 }
-
 
 
 
@@ -310,7 +310,10 @@ p {
 /* Titre entrée plat dessert*/
 .menu-title h2 {
     font-weight: normal;
-    padding-left: 1rem;
+    margin-left: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid #99E2D0;
+    width: 50px;
 }
 
 /* Titre H1 et icône coeur*/
@@ -402,6 +405,7 @@ p {
             border-bottom-right-radius: 1rem;
             overflow: hidden;
         }
+
 
         /* Placement de chaque check a la fin du conteneur*/
         .content {
