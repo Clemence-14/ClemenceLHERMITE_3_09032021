@@ -11,6 +11,11 @@
     -webkit-animation: spin 1.5s linear infinite;
     -o-animation: spin 1.5s linear infinite;
     animation: spin 1.5s linear infinite; 
+    background: whitesmoke;
+    width: 70%;
+    height: 40%;
+    
+   
 
     /* Placement du loader au milieu de la page*/
 
@@ -45,6 +50,9 @@
 }
 
 
+
+
+
 /* Animation pour les divs*/
 
 .plats {
@@ -74,6 +82,13 @@
 body {
     margin: 0;
 }
+
+
+
+
+
+
+
 
 .search{
 /* Centrage h1 et texte page accueil*/
@@ -120,9 +135,6 @@ h2 {
     background: linear-gradient(#fdc4ff, #AD86DC);
     box-shadow: 10px 5px 5px #f789d7;
 }
-
-
-
 }
 
 
@@ -277,11 +289,10 @@ p {
     opacity: 0;
 }
 
-/* Activation au clic et durée de transition*/
-.heart .fas:active {
+/* Activation au survol de la couleur et durée de l'animation*/
+.heart .fas:hover {
     opacity: 1;
-    transition-duration: .3s;
-    animation-duration: 2s;
+    transition-duration: .8s;
 }
 }
 
@@ -330,10 +341,10 @@ p {
 }
 }
 
-/* Activation couleur de coeur au clic à côté titre h1*/ 
-.like .fas:active {
+/* Activation couleur de coeur au survol à côté titre h1*/ 
+.like .fas:hover {
     opacity: 1;
-    transition-duration: .3s;
+    transition-duration: .8s;
 }
 
 
@@ -345,11 +356,11 @@ p {
     
     .plat {
     background-color: white;
-    height: 70px;
+    height: 80px;
     padding-left: 1rem;
     border-radius: 1rem;
-    margin-right: 1em;
-    margin-left: 1em;
+    margin-right: 1rem;
+    margin-left: 1rem;
     margin-bottom: 1rem;
 }
 
@@ -365,14 +376,15 @@ p {
 
 /* Titre h3 dans chaque menu*/
 .plat h3 {
-    padding-top: 1rem;
+    padding-top: 0;
     margin: 0;
+    font-size: medium;
 }
 
 /* Paragraphe menu*/
 .plat p {
     margin-top: 0.5rem;
-    margin-bottom: 0;
+    padding-bottom: 0;
 }
 }
   
@@ -380,7 +392,6 @@ p {
 /* Icone à droite de chaque menu sur fond vert*/
     .plat {
         .check {
-            
             width: 70px;
             display: flex;
             align-items: center;
@@ -392,7 +403,8 @@ p {
             overflow: hidden;
         }
 
-        .contenu {
+        /* Placement de chaque check a la fin du conteneur*/
+        .content {
             display: flex;
             align-items: flex-end;
             width: 100%;
@@ -408,10 +420,7 @@ p {
 
         .prix  {
             display: flex;
-            justify-content: flex-end;
-            position: relative;
-            bottom: 30px;
-            right: 10px;
+            align-items: flex-end;
         }
         
     }
