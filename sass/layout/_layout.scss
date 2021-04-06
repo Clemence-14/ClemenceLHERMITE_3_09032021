@@ -5,9 +5,9 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 255, 0,5);
-       
-    
+    background: white;
+    opacity: 0.4;
+    z-index: 5000;
 }
 
 .chargement {
@@ -26,7 +26,8 @@
     background: rgb(236, 159, 234);
     width: 70%;
     height: 40%;
-    opacity: 1;
+    
+    
 
 
     /* Placement du loader au milieu de la page*/
