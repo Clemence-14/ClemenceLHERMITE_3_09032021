@@ -1,3 +1,15 @@
+.loader {
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 255, 0,5);
+       
+    
+}
+
 .chargement {
     /* Création du loader*/
 
@@ -11,11 +23,11 @@
     -webkit-animation: spin 1.5s linear infinite;
     -o-animation: spin 1.5s linear infinite;
     animation: spin 1.5s linear infinite; 
-    background: whitesmoke;
+    background: rgb(236, 159, 234);
     width: 70%;
     height: 40%;
-    
-   
+    opacity: 1;
+
 
     /* Placement du loader au milieu de la page*/
 
@@ -28,6 +40,7 @@
     animation-iteration-count: 3; /* Nombre de répétitions de l'animation*/
     animation-fill-mode: forwards; /* Valeur calculée lors du dernier keyframes*/
 }
+
 
 
 
@@ -154,12 +167,25 @@ h2 {
     padding-right: 1rem;
     padding-left: 1rem;
     width: 80%;
+    cursor: pointer;
 
-    /* Taille des icônes dans fonctionnement*/
+/* Liens dans focntionnement pour que les h3 restent noirs et ne soient pas soulignés*/
+a {
+    color: black;
+    text-decoration: none;
+}
+
+/* Taille des icônes dans fonctionnement*/
 .fas {
     font-size: large;
 }
 
+/* Coloration des icônes dans fonctionnment au survol*/
+.fas:hover {
+    color: #9356DC;
+}
+
+/* Chiffres 1,2,3 dans fonctionnement*/
 .number {
     background-color: #9356DC;
     color: white;
@@ -170,10 +196,15 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: -3rem;
+    margin-left: -2.5rem;
 }
 }
 
+/* Au survol, coloration du fond en violet clair et des icônes en violet plus foncé*/
+.fonctionnement:hover {
+    background-color: #f0e4ff;
+    color: #9356DC;
+}
 
 
 
@@ -208,7 +239,7 @@ h2 {
     padding-left: 1rem;
     display: flex;
     align-items: center;
-    
+    position: relative;
 }
 
 /* Alignement texte décalage gauche et icône coeur pour la note enchantée*/
@@ -216,6 +247,7 @@ h2 {
     padding-left: 1rem;
     display: flex;
     align-items: center;
+    position: relative;
 }
 
 /* Décalage titre gauche et marges haut bas couleur noire pour le lien*/
@@ -275,9 +307,11 @@ p {
 /* Icône coeur positionnement et taille page accueil*/
 .heart {
     position: absolute;
-    right: 50px;
+    right: 1rem;
+    bottom: 1rem;
     font-size: 2rem;
     color: gray;
+    cursor: pointer;
 }
 
 /* Icône coeur plein*/
@@ -306,6 +340,11 @@ p {
     border-top-right-radius: 2rem;
     margin-top: -3rem;
     position: relative;
+
+.title-page {
+    margin-left: 1rem;
+    padding-top: 1rem;
+}
 }
 
 /* Titre entrée plat dessert*/
@@ -324,11 +363,14 @@ p {
     justify-content: space-between;
     margin-right: 30px;
     margin-left: 20px;
+    position: relative;
+    
 
 /* icône coeur avec titre h1*/
  i {
     position: absolute;
-    right: 50px;
+    right: 20px;
+    bottom: 15px;
     color: gray;
     font-size: 2rem;
 }
@@ -336,19 +378,20 @@ p {
 /* Icône coeur plein avec titre h1*/
  .fas {
     position: absolute;
-    right: 50px;
+    right: 20px;
     font-size: 2rem;
     cursor: pointer;
     color: #9356DC;
     opacity: 0;
+    transition: all 0.8s;
 }
 }
 
 /* Activation couleur de coeur au survol à côté titre h1*/ 
-.like .fas:hover {
+.like:hover .fas {
     opacity: 1;
-    transition-duration: .8s;
 }
+
 
 
 
