@@ -315,7 +315,6 @@ p {
     padding-bottom: 0.5rem;
     border-bottom: 3px solid #99E2D0;
     width: 50px;
-    font-family: 'shrikhand', cursive;
 }
 
 /* Titre H1 et icône coeur*/
@@ -362,6 +361,7 @@ p {
     background-color: white;
     height: 80px;
     padding-left: 1rem;
+    margin-top: 0;
     border-radius: 1rem;
     margin-right: 1rem;
     margin-left: 1rem;
@@ -380,15 +380,15 @@ p {
 
 /* Titre h3 dans chaque menu*/
     .plat h3 {
-        padding-top: 0;
-        margin: 0;
         font-size: large;
+        margin: 0;
 }
 
 /* Paragraphe menu*/
     .plat p {
-        margin-top: 0.5rem;
-        margin-bottom: 1rem;
+        margin-top: 0;
+        margin-bottom: 0.5rem;
+        padding-top: 0.5rem;
 }
 
 /* Pour les paragraphes sur deux lignes dans les menus pour mieux centrer*/
@@ -412,7 +412,6 @@ p {
             font-size: 1.5rem;
             opacity: 0;
         }
-
 
         /* Apparition du check lors du survol*/
         .check:hover {
