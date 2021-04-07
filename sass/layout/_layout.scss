@@ -5,9 +5,6 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: white;
-    opacity: 0.4;
-    z-index: 5000;
 }
 
 .chargement {
@@ -62,7 +59,6 @@
         opacity: 0;
     }
 }
-
 
 
 
@@ -334,12 +330,13 @@ p {
 
 
 
-/* Du titre H1 au bouton commander*/
+/* Du titre H1 et le bouton commander*/
 .menu {
     background-color: #f2f2f2;
     border-top-left-radius: 2rem;
     border-top-right-radius: 2rem;
     margin-top: -3rem;
+    margin-bottom: -1rem;
     position: relative;
 
 .title-page {
@@ -424,28 +421,45 @@ p {
 
 /* Titre h3 dans chaque menu*/
     .plat h3 {
-        font-size: large;
+        font-size: 1rem;
         margin: 0;
+        margin-bottom: 0.25rem;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+}
+
+    .plat .title-3 {
+        margin-bottom: 0.25rem;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
 }
 
 /* Paragraphe menu*/
     .plat p {
         margin-top: 0;
         margin-bottom: 0.5rem;
-        padding-top: 0.5rem;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
 }
 
-/* Pour les paragraphes sur deux lignes dans les menus pour mieux centrer*/
-    .plat .section {
-    margin-bottom: 0.5rem;
-}
+/* Certains paragraphes stylisés différemment*/
+    .plat .paragraph {
+        padding-top: 0.25rem;
+        margin-bottom: 1rem;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
 }
   
 
 /* Icone à droite de chaque menu sur fond vert*/
     .plat {
         .check {
-            width: 70px;
+            width: 0px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -454,14 +468,7 @@ p {
             border-top-right-radius: 1rem;
             border-bottom-right-radius: 1rem;
             font-size: 1.5rem;
-            opacity: 0;
-        }
-
-        /* Apparition du check lors du survol*/
-        .check:hover {
-            opacity: 1;
-            transition-duration: 1.5s;
-            width: 150px;
+            overflow: hidden;
         }
         
         /* Rotation du check au survol*/
@@ -475,11 +482,15 @@ p {
         .content {
             display: flex;
             align-items: flex-end;
+            justify-content: space-between;
             width: 100%;
         }
 
         .text {
-            margin-right: 0.5rem;
+            margin-right: 1rem;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
         }
 
 
@@ -487,11 +498,18 @@ p {
             display: block;
         }
 
-        .prix {
-            display: flex;
-            align-items: flex-end;
+        .prix .price {
+            margin-bottom: 1rem;
+            margin-right: 1rem;
         }
 }
+
+    .plat:hover .check {
+        width: 70px;
+        transition: .6s;
+    }
+
+    
 
 
 /* Bouton commander*/
@@ -499,6 +517,8 @@ p {
 .bouton {
     display: flex;
     justify-content: center;
+    background-color: #f2f2f2;
+    padding-top: 1rem;
 }
 
 .bouton p {
