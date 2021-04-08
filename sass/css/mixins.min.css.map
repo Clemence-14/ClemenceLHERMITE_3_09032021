@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAKA,AAAA,QAAQ,AAAC,CACL,KAAK,CAAE,IAAI,CACX,MAAM,CAAE,MAAM,CAQjB,AAdG,MAAM,CAAC,MAAM,MAAM,SAAS,EAAE,KAAK,EAIvC,AAHQ,QAGA,AAHC,CAQD,KAAK,CAAE,KAAK,CARG,CADnB,MAAM,CAAC,MAAM,MAAM,SAAS,EAAE,MAAM,EAIxC,AAHQ,QAGA,AAHC,CAWD,KAAK,CAAE,MAAM,CAXE",
+    "sources": [
+        "../layout/mixins.scss"
+    ],
+    "names": [],
+    "file": "mixins.min.css"
+}
