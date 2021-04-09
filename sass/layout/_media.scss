@@ -23,3 +23,12 @@
         grid-gap: 1.5rem;
     }
 }
+
+@media(min-width: 1025px) {
+    .vignettes {
+        display: flex;
+    }
+    .vignette {
+        width: 300px;
+    }
+}

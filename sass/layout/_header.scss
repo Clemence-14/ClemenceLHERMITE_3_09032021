@@ -1,9 +1,4 @@
-    header {
-        h1 {
-            font-family: $font-family-secondary;
-        }
     
-
     header .logoheader img {
         width: 40%;
     }
@@ -20,6 +15,7 @@
     .logoheader {
         display: flex;
         align-items: center;
+        font-family: 'Shrikhand', cursive;
     }
 
     .logoheader i {
@@ -47,5 +43,5 @@
         object-fit: cover;
     }
 
-}
+
 
