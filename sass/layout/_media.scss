@@ -31,4 +31,11 @@
     .vignette {
         width: 300px;
     }
+    .plats {
+        display: flex;
+        justify-content: space-around;
+    }
+    .plat {
+        width: 400px;
+    }
 }

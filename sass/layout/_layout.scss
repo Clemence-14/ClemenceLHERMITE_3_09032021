@@ -6,16 +6,16 @@
     border-left: 10px solid #fdc4ff;
     border-right: 10px solid #AD86DC;
     border-radius: 50%;
+    background: whitesmoke;
     width: 100px;
     height: 100px;
     -webkit-animation: spin 1.5s linear infinite;
     -o-animation: spin 1.5s linear infinite;
     animation: spin 1.5s linear infinite; 
-    background: rgb(236, 159, 234);
     width: 70%;
     height: 40%;
     
-    
+
 
 
     /* Placement du loader au milieu de la page*/
@@ -52,7 +52,7 @@
 }
 
 
-/* Animation pour les divs*/
+/* Animation pour les divs plats*/
 
 .plats {
     animation: fadein 2s;
@@ -526,7 +526,7 @@ p {
         }
         
         /* Rotation du check au survol*/
-        .check .fas:hover {
+        .check:hover .fas {
             transform: rotate(360deg);
             transition-duration: 1s;
         }
