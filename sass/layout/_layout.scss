@@ -70,7 +70,11 @@
     60% {
         opacity: 1;
     }
+    99% {
+        opacity: 0;
+    }
     100% {
+        display: none;
         opacity: 0;
     }
 }
@@ -176,6 +180,7 @@ h2 {
     padding-left: 1rem;
     width: 80%;
     cursor: pointer;
+    transition: background-color 0.4s;
 
 /* Liens dans focntionnement pour que les h3 restent noirs et ne soient pas soulignés*/
 a {
@@ -186,6 +191,7 @@ a {
 /* Taille des icônes dans fonctionnement*/
 .fas {
     font-size: large;
+    transition: color 0.4s;
 }
 
 /* Coloration des icônes dans fonctionnment au survol*/
@@ -342,12 +348,12 @@ p {
     font-size: 2rem;
     color: #9356DC;
     opacity: 0;
+    transition: all 0.8s;
 }
 
 /* Activation au survol de la couleur et durée de l'animation*/
 .heart .fas:hover {
-    opacity: 1;
-    transition-duration: .8s;
+    opacity: 1;    
 }
 }
 
@@ -535,6 +541,20 @@ p {
 /* Icone à droite de chaque menu sur fond vert*/
     .plat {
         .check {
+            .fas {
+              transition: all 1s;
+            }
+         }
+         
+         &:hover
+           .check {
+             .fas {
+               transform: rotate(360deg);
+             }
+           }
+         
+       
+        .check {
             width: 0px;
             display: flex;
             align-items: center;
@@ -546,13 +566,9 @@ p {
             font-size: 1.5rem;
             overflow: hidden;
             text-overflow: ellipsis;
+            transition: .6s;
         }
         
-        /* Rotation du check au survol*/
-        .check:hover .fas {
-            transform: rotate(360deg);
-            transition-duration: 1s;
-        }
 
 
         /* Placement de chaque check a la fin du conteneur*/
@@ -596,7 +612,6 @@ p {
     /* Apparition du check au survol des plats*/
     .plat:hover .check {
         width: 70px;
-        transition: .6s;
     }
     
 
