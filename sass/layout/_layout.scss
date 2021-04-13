@@ -1,3 +1,14 @@
+.loading {
+    background-color: rgba(10, 10, 10, 0.6);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    animation: loading 6s;
+    animation-fill-mode: forwards;
+}
+
 .chargement {
     /* Création du loader*/
 
@@ -22,6 +33,7 @@
 
     margin: auto;
     position: absolute;
+    z-index: 2;
     top: 0;
     left: 0;
     right: 0;
@@ -51,6 +63,17 @@
     }
 }
 
+@keyframes loading {
+    0% {
+        opacity: 1;
+    }
+    60% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
 
 /* Animation pour les divs plats*/
 
