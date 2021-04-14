@@ -1,4 +1,6 @@
-@import "helpers/variables";
+@import "abstracts/mixins";
+@import "abstracts/variables";
 @import "partiels/layout";
 @import "partiels/footer";
 @import "partiels/header";
+@import "components/animations";
