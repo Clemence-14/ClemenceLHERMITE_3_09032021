@@ -43,75 +43,9 @@
 }
 
 
-
-
-/* Animation du loader*/
-
-
-@keyframes spin {
-    0% {
-        transform: scale(0.1);
-        opacity: 0;
-    }
-    60% {
-        transform: scale(1.2);
-        opacity: 1;
-    }
-    100% {
-        transform: scale(0);
-        opacity: 0;
-    }
-}
-
-@keyframes loading {
-    0% {
-        opacity: 1;
-    }
-    60% {
-        opacity: 1;
-    }
-    99% {
-        opacity: 0;
-    }
-    100% {
-        display: none;
-        opacity: 0;
-    }
-}
-
-/* Animation pour les divs plats*/
-
-.plats {
-    animation: fadein 2s;
-    -moz-animation: fadein 2s; /* Firefox*/ 
-    -webkit-animation: fadein 2s; /* Safari et Chrome*/
-}
-
-@keyframes fadein { /* Sur Firefox*/
-   from {
-       opacity: 0;
-   }
-   to {
-       opacity: 1;
-   }
-}
-
-@-webkit-keyframes fadein { /* Sur Safari et Chrome*/
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
 body {
     margin: 0;
 }
-
-
-
-
 
 
 
@@ -119,7 +53,7 @@ body {
 /* Centrage h1 et texte page accueil*/
  .accueiltexte {
     text-align: center;
-    background-color: #f2f2f2;
+    background-color: $primary-color;
     padding-bottom: 1rem;
     padding-top: 1rem;
 }
@@ -129,7 +63,7 @@ h2 {
 }
 
 .bouton1 {
-    background-color: #f2f2f2;
+    background-color: $primary-color;
 }
 
 /* Bouton explorer nos restaurants page accueil*/
@@ -146,7 +80,7 @@ h2 {
     align-items: center;
     font-size: large;
     background: linear-gradient(#FF79DA, #9356DC); /* Dégradé de couleurs du bouton*/
-    color: white;
+    color: $secondary-color;
     padding-top: 1rem;
     padding-bottom: 1rem;
     padding-left: 3rem;
@@ -169,7 +103,7 @@ h2 {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #f2f2f2;
+    background-color: $primary-color;
     border-radius: 2rem;
     margin-bottom: 1rem;
     margin-left: 1rem;
@@ -202,7 +136,7 @@ a {
 /* Chiffres 1,2,3 dans fonctionnement*/
 .number {
     background-color: #9356DC;
-    color: white;
+    color: $secondary-color;
     font-size: 1rem;
     width: 30px;
     height: 30px;
@@ -233,13 +167,13 @@ a {
     }
 
     .title-2 {
-        background-color: #f2f2f2;
+        background-color: $primary-color;
         margin-top: 4rem;
         margin-bottom: -3rem;
     }
 
     .vignettes {
-        background-color: #f2f2f2;
+        background-color: $primary-color;
         margin-top: 3rem;
         padding-bottom: 2em;
         padding-top: 2em;
@@ -292,7 +226,7 @@ p {
 
 /* Tous les enfants de la section restaurants page accueil*/
 .restaurants > div {
-    background-color: #f2f2f2;
+    background-color: $primary-color;
     padding-top: 2rem;
     margin-top: 4rem;
     padding-bottom: 2rem;
@@ -319,7 +253,7 @@ p {
 /* Image texte et icône catégorie restaurants page accueil*/
 .vignettes .vignette {
     margin-bottom: 1rem;
-    background-color: white;
+    background-color: $secondary-color;
     border-radius: 1rem;
     margin-left: 1rem;
     margin-right: 1rem;
@@ -408,13 +342,13 @@ p {
 
 /* Du titre H1 et le bouton commander*/
 .menu {
-    background-color: #f2f2f2;
+    background-color: $primary-color;
     border-top-left-radius: 2rem;
     border-top-right-radius: 2rem;
     margin-top: -3rem;
     margin-bottom: -1rem;
     position: relative;
-    font-family: 'Roboto', sans-serif;
+    font-family: $font-family-primary;
     color: black;
 
 .title-page {
@@ -422,7 +356,7 @@ p {
     padding-top: 1rem;
 }
 .title-page h1 {
-    font-family: 'Shrikhand', cursive;
+    font-family: $font-family-secondary;
     font-size: 1.25rem;
 }
 }
@@ -481,7 +415,7 @@ p {
 .plats {
     
     .plat {
-    background-color: white;
+    background-color: $secondary-color;
     height: 80px;
     padding-left: 1rem;
     margin-top: 0;
@@ -560,7 +494,7 @@ p {
             align-items: center;
             justify-content: center;
             background-color: #99E2D0;
-            color: white;
+            color: $secondary-color;
             border-top-right-radius: 1rem;
             border-bottom-right-radius: 1rem;
             font-size: 1.5rem;
@@ -621,7 +555,7 @@ p {
 .bouton {
     display: flex;
     justify-content: center;
-    background-color: #f2f2f2;
+    background-color: $primary-color;
     padding-top: 1rem;
 }
 
@@ -633,7 +567,7 @@ p {
     align-items: center;
     font-size: large;
     background: linear-gradient(#FF79DA, #9356DC); /* Dégradé de couleurs du bouton*/
-    color: white;
+    color: $secondary-color;
     padding-top: 1rem;
     padding-bottom: 1rem;
     padding-left: 3rem;
