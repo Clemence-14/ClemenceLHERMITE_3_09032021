@@ -4,7 +4,12 @@
     }
 
     /* Image logo ohmyfood*/
-    .logoheader img {
+    .logoheader {
+        display: flex;
+        align-items: center;
+        font-family: 'Shrikhand', cursive;
+        
+        img {
         display: block;
         margin-left: auto;
         margin-right: auto;
@@ -12,16 +17,11 @@
         margin-top: 1rem;
     }
 
-    .logoheader {
-        display: flex;
-        align-items: center;
-        font-family: 'Shrikhand', cursive;
-    }
-
-    .logoheader i {
+        i {
         margin-left: 1rem;
         color: black;
     }
+}
 
 
 

@@ -1,53 +1,6 @@
-.loading {
-    background-color: rgba(10, 10, 10, 0.6);
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    animation: loading 6s;
-    animation-fill-mode: forwards;
-}
-
-.chargement {
-    /* Création du loader*/
-
-    border-top: 10px solid #9356DC;
-    border-bottom: 10px solid #f789d7;
-    border-left: 10px solid #fdc4ff;
-    border-right: 10px solid #AD86DC;
-    border-radius: 50%;
-    background: whitesmoke;
-    width: 100px;
-    height: 100px;
-    -webkit-animation: spin 1.5s linear infinite;
-    -o-animation: spin 1.5s linear infinite;
-    animation: spin 1.5s linear infinite; 
-    width: 70%;
-    height: 40%;
-    
-
-
-
-    /* Placement du loader au milieu de la page*/
-
-    margin: auto;
-    position: absolute;
-    z-index: 2;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    animation-iteration-count: 3; /* Nombre de répétitions de l'animation*/
-    animation-fill-mode: forwards; /* Valeur calculée lors du dernier keyframes*/
-}
-
-
 body {
     margin: 0;
 }
-
-
 
 .search{
 /* Centrage h1 et texte page accueil*/
@@ -61,42 +14,7 @@ body {
 h2 {
     margin-left: 1rem;
 }
-
-.bouton1 {
-    background-color: $primary-color;
 }
-
-/* Bouton explorer nos restaurants page accueil*/
-.bouton1 {
-    display: flex;
-    justify-content: center;
-}
-
-.bouton1 p {
-    margin-top: 2rem;
-    margin-bottom: 4rem;
-    border-radius: 2rem;
-    display: flex;
-    align-items: center;
-    font-size: large;
-    background: linear-gradient(#FF79DA, #9356DC); /* Dégradé de couleurs du bouton*/
-    color: $secondary-color;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    padding-left: 3rem;
-    padding-right: 3rem;
-    cursor: pointer;
-    transition: all 0.3s;
-}
-
-/* Eclaircissement du bouton page accueil et ombre*/
-.bouton1 :hover {
-    background: linear-gradient(#fdc4ff, #AD86DC);
-    box-shadow: 10px 5px 5px #f789d7;
-}
-}
-
-
 
 /* Fonctionnement accueil*/
 .fonctionnement {
@@ -115,6 +33,13 @@ h2 {
     width: 80%;
     cursor: pointer;
     transition: background-color 0.4s;
+
+    &:hover {
+/* Au survol, coloration du fond en violet clair et des icônes en violet plus foncé*/
+    background-color: #f0e4ff;
+    color: #9356DC;
+}
+    
 
 /* Liens dans focntionnement pour que les h3 restent noirs et ne soient pas soulignés*/
 a {
@@ -148,11 +73,7 @@ a {
 }
 }
 
-/* Au survol, coloration du fond en violet clair et des icônes en violet plus foncé*/
-.fonctionnement:hover {
-    background-color: #f0e4ff;
-    color: #9356DC;
-}
+
 
 
 
@@ -291,54 +212,6 @@ p {
 }
 }
 
-/* Animation apparition progressive des divs menus*/ 
-.menu-title :nth-child(1) {
-    animation: fadein 1.5s;
-}
-
-@keyframes fadein {
-    0% {
-        opacity: 0;
-    }
-    50% {
-        opacity: 0.5;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-.menu-title :nth-child(2) {
-    animation: fadein 2.5s;
-}
-
-@keyframes fadein {
-    0% {
-        opacity: 0;
-    }
-    50% {
-        opacity: 0.5;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-.menu-title :nth-child(3) {
-    animation: fadein 3.5s;
-}
-
-@keyframes fadein {
-    0% {
-        opacity: 0;
-    }
-    50% {
-        opacity: 0.5;
-    }
-    100% {
-        opacity: 1;
-    }
-}
 
 /* Du titre H1 et le bouton commander*/
 .menu {
@@ -399,12 +272,15 @@ p {
     opacity: 0;
     transition: all 0.8s;
 }
-}
 
 /* Activation couleur de coeur au survol à côté titre h1*/ 
-.like:hover .fas {
+&:hover 
+.fas {
     opacity: 1;
 }
+}
+
+
 
 
 
@@ -485,8 +361,13 @@ p {
              .fas {
                transform: rotate(360deg);
              }
-           }
+        }
          
+        /* Apparition du check au survol des plats*/
+        &:hover 
+            .check {
+                width: 70px;
+        }
        
         .check {
             width: 0px;
@@ -529,6 +410,7 @@ p {
             color: black;
             font-size: large;
         }
+    
 
         div {
             display: block;
@@ -540,55 +422,23 @@ p {
             font-weight: 1000;
             color: black;
         }
-}
-
-
-    /* Apparition du check au survol des plats*/
-    .plat:hover .check {
-        width: 70px;
     }
-    
 
-
-/* Bouton commander*/
-
-.bouton {
-    display: flex;
-    justify-content: center;
-    background-color: $primary-color;
-    padding-top: 1rem;
-}
-
-.bouton p {
-    margin-top: 2rem;
-    margin-bottom: 4rem;
-    border-radius: 2rem;
-    display: flex;
-    align-items: center;
-    font-size: large;
-    background: linear-gradient(#FF79DA, #9356DC); /* Dégradé de couleurs du bouton*/
-    color: $secondary-color;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    padding-left: 3rem;
-    padding-right: 3rem;
-    cursor: pointer;
-    transition: all 0.3s;
-}
-
-/* Eclaircissement bouton page menu et ombre*/
-.bouton :hover {
-    background: linear-gradient(#fdc4ff, #AD86DC);
-    box-shadow: 10px 5px 5px #f789d7;
-}
 
 
 @include for-tablet-portrait-up {
-    .plats {
-        display: flex;
-    }
     .plat {
         width: 200px;
+    }
+    .plats .plat {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    .menu-global-responsive {
+        display: flex;
+    }
+    .menu-title h2 {
+        padding-left: 1rem;
     }
     .title-page {
         font-size: x-large;
@@ -596,11 +446,20 @@ p {
     footer nav {
         font-size: x-large;
     }
-    .fonctionnement {
-        margin-left: 4rem;
+    .fonction {
+        display: flex;
+        justify-content: space-around;
+    
+    .number {
+        margin-right: -1.5rem;
     }
-    .fonctionnement .number {
-        margin-left: -7rem;
+}
+    .fonctionnement h3 {
+        font-size: small;
+    }
+    .fonctionnement i {
+        font-size: small;
+        margin-right: -1rem;
     }
     .vignettes {
         display: grid;
