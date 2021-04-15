@@ -1,3 +1,47 @@
+.loading {
+    background-color: rgba(10, 10, 10, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    animation: loading 6s;
+    animation-fill-mode: forwards;
+}
+
+.chargement {
+    /* Création du loader*/
+
+    border-top: 10px solid #9356DC;
+    border-bottom: 10px solid #f789d7;
+    border-left: 10px solid #fdc4ff;
+    border-right: 10px solid #AD86DC;
+    border-radius: 50%;
+    background: whitesmoke;
+    width: 100px;
+    height: 100px;
+    -webkit-animation: spin 1.5s linear infinite;
+    -o-animation: spin 1.5s linear infinite;
+    animation: spin 1.5s linear infinite; 
+    width: 70%;
+    height: 40%;
+    
+
+
+
+    /* Placement du loader au milieu de la page*/
+
+    margin: auto;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    animation-iteration-count: 3; /* Nombre de répétitions de l'animation*/
+    animation-fill-mode: forwards; /* Valeur calculée lors du dernier keyframes*/
+}
+
 /* Animation du loader*/
 
 
@@ -40,20 +84,52 @@
     -webkit-animation: fadein 2s; /* Safari et Chrome*/
 }
 
-@keyframes fadein { /* Sur Firefox*/
-   from {
-       opacity: 0;
-   }
-   to {
-       opacity: 1;
-   }
+/* Animation apparition progressive des divs menus*/ 
+.menu-title :nth-child(1) {
+    animation: fadein 1.5s;
 }
 
-@-webkit-keyframes fadein { /* Sur Safari et Chrome*/
-    from {
+@keyframes fadein {
+    0% {
         opacity: 0;
     }
-    to {
+    50% {
+        opacity: 0.5;
+    }
+    100% {
         opacity: 1;
     }
 }
+
+.menu-title :nth-child(2) {
+    animation: fadein 2.5s;
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.menu-title :nth-child(3) {
+    animation: fadein 3.5s;
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
