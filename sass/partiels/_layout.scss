@@ -212,6 +212,9 @@
 
 
 @include for-tablet-portrait-up {
+    .menu {
+        margin-top: -1rem;
+    }
     .plat {
         width: 200px;
     }
