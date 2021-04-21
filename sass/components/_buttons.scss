@@ -21,13 +21,12 @@ p {
     cursor: pointer;
     transition: all 0.3s;
 }
+}
 
-
-/* Eclaircissement du bouton page accueil et ombre*/
-&:hover {
+   /* Eclaircissement du bouton page accueil et ombre*/
+   .bouton1 :hover {
     background: linear-gradient(#fdc4ff, #AD86DC);
     box-shadow: 10px 5px 5px #f789d7;
-}
 }
 
 
