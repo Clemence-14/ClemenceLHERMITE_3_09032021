@@ -6,9 +6,18 @@
         padding-bottom: 1rem;
         padding-top: 1rem;
     }
+
+   h1 {
+       font-family: $font-family-primary;
+   }
+
+   p {
+       font-family: $font-family-primary;
+   }
     
     h2 {
         margin-left: 1rem;
+        font-family: $font-family-primary;
     }
     }
     
@@ -36,7 +45,10 @@
         color: #9356DC;
     }
         
-    
+    h3 {
+        font-family: $font-family-primary;
+    }
+
     /* Liens dans focntionnement pour que les h3 restent noirs et ne soient pas soulignés*/
     a {
         color: black;
@@ -68,6 +80,8 @@
         margin-left: -2.5rem;
     }
     }
+
+    
     
     
     
@@ -87,6 +101,7 @@
             background-color: $primary-color;
             margin-top: 4rem;
             margin-bottom: -3rem;
+            font-family: $font-family-primary;
         }
     
         .vignettes {
@@ -133,12 +148,14 @@
         margin-top: 1rem;
         margin-bottom: 0;
         color: black;
+        font-family: $font-family-primary;
     }
     
     /* Marge haut bas pour les paragraphes dans chaque vignette page accueil*/
     p {
         margin-bottom: 1rem;
         margin-top: 0.5rem;
+        font-family: $font-family-primary;
     }
     
     /* Tous les enfants de la section restaurants page accueil*/
