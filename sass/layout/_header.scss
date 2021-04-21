@@ -1,0 +1,48 @@
+    
+    header .logoheader img {
+        width: 40%;
+    }
+
+    /* Image logo ohmyfood*/
+    .logoheader {
+        display: flex;
+        align-items: center;
+        font-family: 'Shrikhand', cursive;
+        
+        img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+    }
+
+        i {
+        margin-left: 1rem;
+        color: black;
+    }
+}
+
+
+
+    /* Localisation page d'accueil*/
+    .localisation {
+        background-color: rgb(238, 232, 232);
+        box-shadow: 1px 1px 8px grey inset;
+        display: flex;
+        justify-content: center;
+    }
+
+
+    /* Image en haut du menu*/
+    .image-menu img {
+        display: block;
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+    }
+
+    
+
+
+

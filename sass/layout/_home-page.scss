@@ -1,0 +1,214 @@
+.search{
+    /* Centrage h1 et texte page accueil*/
+     .accueiltexte {
+        text-align: center;
+        background-color: $primary-color;
+        padding-bottom: 1rem;
+        padding-top: 1rem;
+    }
+    
+    h2 {
+        margin-left: 1rem;
+    }
+    }
+    
+    /* Fonctionnement accueil*/
+    .fonctionnement {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: $primary-color;
+        border-radius: 2rem;
+        margin-bottom: 1rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        padding-right: 1rem;
+        padding-left: 1rem;
+        width: 80%;
+        cursor: pointer;
+        transition: background-color 0.4s;
+    
+        &:hover {
+    /* Au survol, coloration du fond en violet clair et des icônes en violet plus foncé*/
+        background-color: #f0e4ff;
+        color: #9356DC;
+    }
+        
+    
+    /* Liens dans focntionnement pour que les h3 restent noirs et ne soient pas soulignés*/
+    a {
+        color: black;
+        text-decoration: none;
+    }
+    
+    /* Taille des icônes dans fonctionnement*/
+    .fas {
+        font-size: large;
+        transition: color 0.4s;
+    }
+    
+    /* Coloration des icônes dans fonctionnment au survol*/
+    .fas:hover {
+        color: #9356DC;
+    }
+    
+    /* Chiffres 1,2,3 dans fonctionnement*/
+    .number {
+        background-color: #9356DC;
+        color: $secondary-color;
+        font-size: 1rem;
+        width: 30px;
+        height: 30px;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: -2.5rem;
+    }
+    }
+    
+    
+    
+    
+    
+    
+    
+    .restaurants {
+    
+    /* Titre h2 restaurants page accueil*/
+        .title-2 h2 {
+            margin-left: 1rem;
+            padding-top: 3rem;
+        }
+    
+        .title-2 {
+            background-color: $primary-color;
+            margin-top: 4rem;
+            margin-bottom: -3rem;
+        }
+    
+        .vignettes {
+            background-color: $primary-color;
+            margin-top: 3rem;
+            padding-bottom: 2em;
+            padding-top: 2em;
+        }
+    
+    /* Pour supprimer le soulignement des liens a et leur couleur bleu par défaut*/
+     .vignettes .vignette a {
+        text-decoration: none;
+        color: grey;
+    }
+    
+    /* 4 vignettes de restaurants page accueil*/
+    .vignette img {
+        display: block;
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+    }
+    
+    
+    /* Alignement du texte et icône coeur*/
+    .vignette .vignette-texte {
+        padding-left: 1rem;
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+    
+    /* Alignement texte décalage gauche et icône coeur pour la note enchantée*/
+    .vignette-texte {
+        padding-left: 1rem;
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+    
+    /* Décalage titre gauche et marges haut bas couleur noire pour le lien*/
+    h4 {
+        padding-left: 1rem;
+        margin-top: 1rem;
+        margin-bottom: 0;
+        color: black;
+    }
+    
+    /* Marge haut bas pour les paragraphes dans chaque vignette page accueil*/
+    p {
+        margin-bottom: 1rem;
+        margin-top: 0.5rem;
+    }
+    
+    /* Tous les enfants de la section restaurants page accueil*/
+    .restaurants > div {
+        background-color: $primary-color;
+        padding-top: 2rem;
+        margin-top: 4rem;
+        padding-bottom: 2rem;
+    }
+    
+    /* Arrondissement des angles*/
+    .vignette img {
+        border-top-left-radius: 1rem;
+        border-top-right-radius: 1rem;
+    }
+    
+    /* Position relative du conteneur de card-badge pour garder les petites cartes nouveau*/
+    .vignette {
+        position: relative;
+    }
+
+    /* Placement de la petite carte nouveau sur deux images de restaurants page accueil*/
+    .card-badge {
+        background-color: #99E2D0;
+        color: green;
+        font-size: 1.5rem;
+        position: absolute;
+        right: 30px;
+        margin-top: -8rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    
+    /* Image texte et icône catégorie restaurants page accueil*/
+    .vignettes .vignette {
+        margin-bottom: 1rem;
+        background-color: $secondary-color;
+        border-radius: 1rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    
+    .vignettes h2 {
+        margin-left: 1rem;
+    }
+    
+    
+    /* Icône coeur positionnement et taille page accueil*/
+    .heart {
+        position: absolute;
+        right: 1rem;
+        bottom: 1rem;
+        font-size: 2rem;
+        color: gray;
+        cursor: pointer;
+    }
+    
+    /* Icône coeur plein*/
+    .heart .fas {
+        position: absolute;
+        top: 0;
+        right: 0;
+        font-size: 2rem;
+        color: #9356DC;
+        opacity: 0;
+        transition: all 0.8s;
+    }
+    
+    /* Activation au survol de la couleur et durée de l'animation*/
+    .heart .fas:hover {
+        opacity: 1;    
+    }
+    }
