@@ -1,8 +1,8 @@
 @import "abstracts/mixins";
 @import "abstracts/variables";
-@import "partiels/layout";
-@import "partiels/footer";
-@import "partiels/header";
+@import "layout/layout";
+@import "layout/footer";
+@import "layout/header";
 @import "components/animations";
 @import "components/buttons";
-@import "partiels/home-page";
+@import "layout/home-page";
