@@ -1,2 +1,6 @@
 node_modules/normalize.css/package-lock.json
 node_modules/normalize.css/package.json
+sass/partiels/_footer.scss
+sass/partiels/_header.scss
+sass/partiels/_home-page.scss
+.gitignore
