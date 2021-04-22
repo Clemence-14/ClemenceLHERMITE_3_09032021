@@ -32,6 +32,11 @@
         display: flex;
         justify-content: center;
         font-family: $font-family-primary;
+
+        input {
+            background-color: rgb(238, 232, 232);
+            border: none;
+        }
     }
 
 
