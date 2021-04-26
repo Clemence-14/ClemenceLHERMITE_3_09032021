@@ -1,19 +1,19 @@
 .search{
     /* Centrage h1 et texte page accueil*/
-     .accueiltexte {
+    .accueiltexte {
         text-align: center;
         background-color: $primary-color;
         padding-bottom: 1rem;
         padding-top: 1rem;
     }
 
-   h1 {
+    h1 {
        font-family: $font-family-primary;
-   }
+    }
 
-   p {
+    p {
        font-family: $font-family-primary;
-   }
+    }
     
     h2 {
         margin-left: 1rem;
@@ -22,7 +22,7 @@
     }
     
     /* Fonctionnement accueil*/
-    .fonctionnement {
+.fonctionnement {
         display: flex;
         justify-content: space-around;
         align-items: center;
@@ -39,7 +39,7 @@
         cursor: pointer;
         transition: background-color 0.4s;
     
-        &:hover {
+    &:hover {
     /* Au survol, coloration du fond en violet clair et des icônes en violet plus foncé*/
         background-color: #f0e4ff;
         color: #9356DC;

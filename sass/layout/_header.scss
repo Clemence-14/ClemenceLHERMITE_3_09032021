@@ -21,7 +21,7 @@
         margin-left: 1rem;
         color: black;
     }
-}
+    }
 
 
 
@@ -32,11 +32,13 @@
         display: flex;
         justify-content: center;
         font-family: $font-family-primary;
+        
 
         input {
             background-color: rgb(238, 232, 232);
             border: none;
-        }
+            margin-left: 1.5rem;
+    }
     }
 
 
