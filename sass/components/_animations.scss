@@ -99,35 +99,3 @@
     }
 }
 
-.menu-title :nth-child(2) {
-    animation: fadein 2.5s;
-}
-
-@keyframes fadein {
-    0% {
-        opacity: 0;
-    }
-    50% {
-        opacity: 0.5;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-.menu-title :nth-child(3) {
-    animation: fadein 3.5s;
-}
-
-@keyframes fadein {
-    0% {
-        opacity: 0;
-    }
-    50% {
-        opacity: 0.5;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
